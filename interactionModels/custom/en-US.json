@@ -1,0 +1,71 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "app inventor",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "what else can I say",
+            "what can I ask",
+            "more help",
+            "help me",
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CreateAppIntent",
+          "slots": [
+            {
+              "name": "appName",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "appDescription",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "i want to create an app",
+            "create an app with {appDescription}",
+            "when the user opens the app they should see {appDescription}",
+            "create an app that {appDescription}",
+            "the phone should {appDescription}",
+            "the screen should {appDescription}",
+            "the application must {appDescription}",
+            "{appName} is the name of the app",
+            "the app should be called {appName}",
+            "i want to make an app",
+            "call the app {appName}",
+            "the app should {appDescription}",
+            "create an app called {appName}",
+            "create an app"
+          ]
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "8"
+}
